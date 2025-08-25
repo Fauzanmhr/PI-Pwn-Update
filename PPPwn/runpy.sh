@@ -25,18 +25,52 @@ STA2="stage2_1100.bin"
 HDIR="/boot/firmware/PPPwn/vx_sta/"
 if [ $UGH = true ] && [[ $FIRMWAREVERSION == "9.00" ]] || [[ $FIRMWAREVERSION == "9.03" ]] || [[ $FIRMWAREVERSION == "9.60" ]] || [[ $FIRMWAREVERSION == "10.00" ]] || [[ $FIRMWAREVERSION == "10.01" ]] || [[ $FIRMWAREVERSION == "10.50" ]] || [[ $FIRMWAREVERSION == "10.70" ]] || [[ $FIRMWAREVERSION == "10.71" ]] || [[ $FIRMWAREVERSION == "11.00" ]] ; then
 HDIR="/boot/firmware/PPPwn/gh_sta/"
-if [[ $FIRMWAREVERSION == "9.00" ]] ; then
-STA2="stage2_900.bin"
-elif [[ $FIRMWAREVERSION == "9.03" ]] ; then
-STA2="stage2_903.bin"
-elif [[ $FIRMWAREVERSION == "9.60" ]] ; then
-STA2="stage2_950.bin"
-elif [[ $FIRMWAREVERSION == "10.00" ]] || [[ $FIRMWAREVERSION == "10.01" ]] ; then
-STA2="stage2_1000.bin"
-elif [[ $FIRMWAREVERSION == "10.50" ]] || [[ $FIRMWAREVERSION == "10.70" ]] || [[ $FIRMWAREVERSION == "10.71" ]] ; then
-STA2="stage2_1050.bin"
-elif [[ $FIRMWAREVERSION == "11.00" ]] ; then
-STA2="stage2_1100.bin"
+if [[ $FIRMWAREVERSION == "7.00" ]]; then
+	STA2="stage2_700.bin"
+elif [[ $FIRMWAREVERSION == "7.01" ]]; then
+	STA2="stage2_701.bin"
+elif [[ $FIRMWAREVERSION == "7.02" ]]; then
+	STA2="stage2_702.bin"
+elif [[ $FIRMWAREVERSION == "7.50" ]]; then
+	STA2="stage2_750.bin"
+elif [[ $FIRMWAREVERSION == "7.51" ]]; then
+	STA2="stage2_751.bin"
+elif [[ $FIRMWAREVERSION == "7.55" ]]; then
+	STA2="stage2_755.bin"
+elif [[ $FIRMWAREVERSION == "8.00" ]]; then
+	STA2="stage2_800.bin"
+elif [[ $FIRMWAREVERSION == "8.01" ]]; then
+	STA2="stage2_801.bin"
+elif [[ $FIRMWAREVERSION == "8.03" ]]; then
+	STA2="stage2_803.bin"
+elif [[ $FIRMWAREVERSION == "8.50" ]]; then
+	STA2="stage2_850.bin"
+elif [[ $FIRMWAREVERSION == "8.52" ]]; then
+	STA2="stage2_852.bin"
+elif [[ $FIRMWAREVERSION == "9.00" ]]; then
+	STA2="stage2_900.bin"
+elif [[ $FIRMWAREVERSION == "9.03" ]]; then
+	STA2="stage2_903.bin"
+elif [[ $FIRMWAREVERSION == "9.04" ]]; then
+	STA2="stage2_904.bin"
+elif [[ $FIRMWAREVERSION == "9.50" ]]; then
+	STA2="stage2_950.bin"
+elif [[ $FIRMWAREVERSION == "9.51" ]]; then
+	STA2="stage2_951.bin"
+elif [[ $FIRMWAREVERSION == "9.60" ]]; then
+	STA2="stage2_960.bin"
+elif [[ $FIRMWAREVERSION == "10.00" ]]; then
+	STA2="stage2_1000.bin"
+elif [[ $FIRMWAREVERSION == "10.01" ]]; then
+	STA2="stage2_1001.bin"
+elif [[ $FIRMWAREVERSION == "10.50" ]]; then
+	STA2="stage2_1050.bin"
+elif [[ $FIRMWAREVERSION == "10.70" ]]; then
+	STA2="stage2_1070.bin"
+elif [[ $FIRMWAREVERSION == "10.71" ]]; then
+	STA2="stage2_1071.bin"
+elif [[ $FIRMWAREVERSION == "11.00" ]]; then
+	STA2="stage2_1100.bin"
 fi
 else
 UGH=false
